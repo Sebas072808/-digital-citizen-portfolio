@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="My Personal Website: Digital Security and Ethics, including passwords, phishing, malware, privacy, AI ethics, and a safe password strength demonstration.">
+  <title>Security &amp; Ethics | My Personal Website</title>
+  <style>
+    :root { color-scheme: dark; --bg:#08111f; --panel:#111f32; --panel2:#15263d; --text:#edf5ff; --muted:#b5c6d9; --accent:#55d4da; --line:#32445c; --warn:#ffc97c; }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; background: linear-gradient(180deg,#0b1930 0,#08111f 400px); color:var(--text); font-family: system-ui, -apple-system, BlinkMacSystemFont,"Segoe UI",Arial,sans-serif; line-height:1.7; }
+    a { color:#9be9ee; }
+    a:focus-visible, button:focus-visible, input:focus-visible { outline:3px solid var(--warn); outline-offset:4px; }
+    .skip { position:absolute; left:-9999px; top:1rem; background:white; color:black; padding:.5rem; z-index:10; }
+    .skip:focus { left:1rem; }
+    .topbar { background: rgba(8,17,31,.96); border-bottom:1px solid var(--line); }
+    .navwrap { max-width:1100px; margin:auto; display:flex; gap:1rem; align-items:center; justify-content:space-between; flex-wrap:wrap; padding:1rem 1.2rem; }
+    .brand { font-weight:800; font-size:1.05rem; text-decoration:none; color:white; letter-spacing:.02em; }
+    nav { display:flex; flex-wrap:wrap; gap:.3rem; }
+    nav a { text-decoration:none; color:var(--muted); font-size:.91rem; border-radius:9px; padding:.4rem .62rem; }
+    nav a:hover, nav a[aria-current="page"] { color:#07131d; background:var(--accent); }
+    .container { width:min(100% - 2.3rem, 950px); margin:auto; }
+    header.hero { padding:4rem 0 2.1rem; }
+    .eyebrow { display:inline-block; text-transform:uppercase; color:var(--accent); font-size:.76rem; letter-spacing:.15em; font-weight:800; }
+    h1 { font-size:clamp(2.1rem,6vw,3.5rem); line-height:1.13; margin:.8rem 0 1rem; letter-spacing:-.04em; }
+    .lead { max-width:760px; color:var(--muted); font-size:1.1rem; }
+    .intro { border:1px solid var(--line); background:rgba(85,212,218,.065); padding:1.1rem 1.3rem; border-radius:15px; margin:1.8rem 0 1.2rem; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(275px,1fr)); gap:1rem; margin:1rem 0 2.5rem; }
+    .card { background:var(--panel); border:1px solid var(--line); padding:1.5rem; border-radius:17px; scroll-margin-top:1.5rem; }
+    .card h2, .demo h2 { line-height:1.25; margin:0 0 .9rem; font-size:1.45rem; }
+    .card p { margin:.75rem 0; }
+    .card ul { padding-left:1.25rem; margin:.7rem 0 0; }
+    .card li { margin:.55rem 0; }
+    .card strong { color:#f8fcff; }
+    .tag { font-size:.8rem; font-weight:800; letter-spacing:.09em; color:var(--accent); margin-bottom:.7rem; }
+    .example { background:var(--panel2); border-left:3px solid var(--warn); padding:.8rem 1rem; border-radius:7px; color:#f3e8d9; margin:1rem 0; }
+    .example small { display:block; color:var(--muted); }
+    .demo { background:linear-gradient(135deg,#162d47,#102139); border:1px solid #50748a; border-radius:20px; padding:1.6rem; margin-bottom:2.5rem; scroll-margin-top:1.5rem; }
+    .notice { color:#fff0d4; background:#362c24; border:1px solid #796449; border-radius:11px; padding:.7rem 1rem; font-size:.93rem; }
+    .formline { display:flex; gap:.7rem; flex-wrap:wrap; margin:.9rem 0 .65rem; }
+    input[type="password"] { flex:1 1 260px; min-width:0; background:#071624; color:white; border:1px solid #7b9bb1; border-radius:10px; padding:.8rem 1rem; font:inherit; }
+    button { border:0; background:var(--accent); color:#09202d; font-weight:750; font:inherit; cursor:pointer; border-radius:10px; padding:.75rem 1.05rem; }
+    .meter-track { height:13px; border-radius:99px; background:#0a1726; border:1px solid #3d526b; overflow:hidden; margin:1.1rem 0 .7rem; }
+    .meter { height:100%; width:0; background:#8393a4; transition:width .15s ease,background .15s ease; }
+    #strength { font-weight:800; }
+    #tips { color:#d8e8f7; margin-top:.4rem; }
+    .muted { color:var(--muted); font-size:.93rem; }
+    footer { text-align:center; padding:2rem 1rem 3rem; border-top:1px solid var(--line); color:var(--muted); }
+    @media (max-width:680px) { .navwrap { align-items:flex-start; } .card, .demo { padding:1.2rem; } header.hero { padding-top:2.5rem; } }
+    @media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } .meter { transition:none; } }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="topbar">
+    <div class="navwrap">
+      <a class="brand" href="index.html">My Personal Website</a>
+      <nav aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="internet.html">Internet</a>
+        <a href="hardware.html">Hardware</a>
+        <a href="io.html">Input &amp; Output</a>
+        <a href="security.html" aria-current="page">Security &amp; Ethics</a>
+      </nav>
+    </div>
+  </div>
+
+  <main id="main" class="container">
+    <header class="hero">
+      <div class="eyebrow">Chapter 5 • Digital Security and Ethics</div>
+      <h1>Staying Safe and Responsible Online</h1>
+      <p class="lead">Technology is part of everyday life. Knowing how to protect your accounts, recognize scams, and use AI responsibly makes the internet safer for everyone.</p>
+      <div class="intro">This page covers six important topics: <strong>strong passwords, phishing attacks, malware, online privacy, AI ethics,</strong> and a <strong>safe password-strength demonstration.</strong></div>
+    </header>
+
+    <div class="grid">
+      <section class="card" id="passwords" aria-labelledby="pw-heading">
+        <div class="tag">01 / ACCOUNT SECURITY</div>
+        <h2 id="pw-heading">Strong Passwords</h2>
+        <p>A strong password is hard for people or computer programs to guess. Longer, unpredictable passwords are usually more secure than short passwords, especially if they avoid names, birthdays, and familiar phrases.</p>
+        <ul>
+          <li>When making your own password, aim for <strong>at least 14–16 characters</strong>, or use an even longer password when allowed.</li>
+          <li>Letters, numbers, and symbols can add variety, but <strong>length and unpredictability</strong> matter most.</li>
+          <li>Use a <strong>different password on every account</strong>. If one site is hacked, reused passwords can expose other accounts.</li>
+          <li>A <strong>password manager</strong> helps create and save random, unique passwords.</li>
+          <li><strong>Multifactor authentication (MFA)</strong> adds extra protection through an authenticator app, security key, or another sign-in method.</li>
+        </ul>
+        <p><strong>Important:</strong> Never share your passwords with anyone, and never reuse an easy-to-guess password.</p>
+      </section>
+
+      <section class="card" id="phishing" aria-labelledby="phish-heading">
+        <div class="tag">02 / SPOT THE SCAM</div>
+        <h2 id="phish-heading">Phishing Attacks</h2>
+        <p>Phishing is when scammers pretend to be a trusted person or organization to trick someone into revealing a password, financial detail, or other private information. Phishing can happen through emails, texts, social media, and fake websites.</p>
+        <div class="example"><small>Made-up suspicious email:</small> “URGENT: Your school account closes in 10 minutes! Click account-check.example and enter your password!”</div>
+        <div class="example"><small>Made-up suspicious text:</small> “Your package cannot be delivered. Click this link and pay a small fee.”</div>
+        <p><strong>Warning signs:</strong> unexpected links, strange sender addresses, pressure to act immediately, surprise payment requests, and demands for login details.</p>
+        <p><strong>Stay safe:</strong> Check the full website address and sender, avoid unexpected attachments, and go to the organization's official app or known website instead of following a suspicious link. If in doubt, contact the organization through a trusted channel.</p>
+        <p class="muted">The “.example” domain above is a harmless placeholder, not a real login website.</p>
+      </section>
+
+      <section class="card" id="malware" aria-labelledby="malware-heading">
+        <div class="tag">03 / PROTECT DEVICES</div>
+        <h2 id="malware-heading">Malware</h2>
+        <p>Malware is harmful software designed to disrupt a device, steal data, or prevent you from using files.</p>
+        <ul>
+          <li><strong>Viruses:</strong> Harmful code that attaches to files or programs and can spread when those files run.</li>
+          <li><strong>Ransomware:</strong> Malware that blocks access to files and demands payment.</li>
+          <li><strong>Spyware:</strong> Software that secretly monitors activity or collects information.</li>
+        </ul>
+        <p>Computers and phones can become infected through unsafe downloads, fake apps, malicious email attachments, compromised sites, and outdated software.</p>
+        <p><strong>Prevention:</strong> Update your system and apps, download from trusted sources, avoid suspicious attachments, keep security protections turned on, and back up important files.</p>
+      </section>
+
+      <section class="card" id="privacy" aria-labelledby="privacy-heading">
+        <div class="tag">04 / PERSONAL INFORMATION</div>
+        <h2 id="privacy-heading">Online Privacy</h2>
+        <p>Online privacy means controlling who can see and use your personal information. Sharing too much can expose your location, phone number, school, accounts, or other sensitive details.</p>
+        <ul>
+          <li>Review <strong>privacy settings</strong> on social media and decide who can view your posts and location.</li>
+          <li>Websites and apps collect data about browsing and interests. Review permissions and turn off unnecessary tracking.</li>
+          <li>Use <strong>HTTPS websites</strong>, but remember that HTTPS alone does not prove a site is honest.</li>
+          <li>Do not publicly post passwords, identification numbers, home addresses, or financial details.</li>
+          <li>Think before posting because screenshots and saved copies can remain after a post is deleted.</li>
+        </ul>
+      </section>
+
+      <section class="card" id="ai" aria-labelledby="ai-heading">
+        <div class="tag">05 / RESPONSIBLE TECHNOLOGY</div>
+        <h2 id="ai-heading">AI Ethics</h2>
+        <p>Artificial intelligence can help people learn, write, research, and solve problems, but it must be used responsibly.</p>
+        <ul>
+          <li><strong>Bias:</strong> AI can produce unfair outcomes if the information used to train it contains unfair patterns.</li>
+          <li><strong>Privacy:</strong> Entering private information into an AI tool may expose details that should be kept confidential.</li>
+          <li><strong>Misinformation:</strong> AI may produce convincing answers, images, or audio that are false or misleading.</li>
+          <li><strong>Responsible use:</strong> Use AI to support learning, not to deceive people or present unverified claims as facts.</li>
+          <li><strong>Verification:</strong> Double-check important AI-generated statements against trustworthy sources because AI sometimes makes mistakes.</li>
+          <li><strong>Intellectual property:</strong> Respect creators' work. Do not copy protected material without permission, and credit sources when needed.</li>
+        </ul>
+      </section>
+
+      <section class="card" aria-labelledby="habits-heading">
+        <div class="tag">QUICK REMINDER</div>
+        <h2 id="habits-heading">Smart Digital Habits</h2>
+        <p>Staying safe online means paying attention before you click, share, download, or sign in. Small habits can prevent many common digital problems.</p>
+        <ul>
+          <li>Stop and think before clicking unexpected links.</li>
+          <li>Use unique, strong passwords and enable MFA.</li>
+          <li>Keep devices and apps updated.</li>
+          <li>Share less personal information publicly.</li>
+          <li>Verify AI-generated information before trusting or sharing it.</li>
+        </ul>
+      </section>
+    </div>
+
+    <section class="demo" id="checker" aria-labelledby="checker-heading">
+      <div class="tag">06 / INTERACTIVE DEMONSTRATION</div>
+      <h2 id="checker-heading">Password Strength Checker</h2>
+      <p>Try a <strong>made-up example password</strong> to see how length and character variety affect an estimated strength score.</p>
+      <p class="notice"><strong>Privacy reminder:</strong> Never type a real password here. This demonstration runs only in your browser. It does not send, collect, display, or save what you type.</p>
+      <label for="test-password"><strong>Type a FAKE example password:</strong></label>
+      <div class="formline">
+        <input type="password" id="test-password" placeholder="Made-up examples only" autocomplete="off" autocapitalize="off" spellcheck="false" maxlength="128" aria-describedby="tips privacy-note">
+        <button type="button" id="clear">Clear</button>
+      </div>
+      <div class="meter-track" role="presentation"><div id="meter" class="meter"></div></div>
+      <div id="strength" role="status" aria-live="polite">Strength: Start typing a fake example</div>
+      <p id="tips">Tip: Longer, unique, unpredictable passwords are generally harder to guess.</p>
+      <p id="privacy-note" class="muted">This is an educational estimate, not a guarantee of security. No account, form submission, analytics, or password storage is used.</p>
+    </section>
+  </main>
+
+  <footer>My Personal Website • Chapter 5: Digital Security and Ethics</footer>
+
+  <script>
+    // Privacy: this demo reads only the current field value inside the browser.
+    // It does not submit, log, transmit, or store the entered text.
+    (() => {
+      'use strict';
+      const field = document.getElementById('test-password');
+      const clear = document.getElementById('clear');
+      const meter = document.getElementById('meter');
+      const strength = document.getElementById('strength');
+      const tips = document.getElementById('tips');
+
+      function update() {
+        const value = field.value;
+        if (value.length === 0) {
+          meter.style.width = '0%';
+          meter.style.background = '#8393a4';
+          strength.textContent = 'Strength: Start typing a fake example';
+          tips.textContent = 'Tip: Longer, unique, unpredictable passwords are generally harder to guess.';
+          return;
+        }
+        const categories = [/[a-z]/.test(value), /[A-Z]/.test(value), /\d/.test(value), /[^A-Za-z0-9]/.test(value)].filter(Boolean).length;
+        let score = 0;
+        if (value.length >= 8) score++;
+        if (value.length >= 12) score++;
+        if (value.length >= 16) score++;
+        if (categories >= 3) score++;
+        const obvious = /password|123456|qwerty|letmein|abcdef|111111/i.test(value);
+        if (obvious) score = Math.min(score, 1);
+        const labels = ['Very weak', 'Weak', 'Fair', 'Good', 'Stronger'];
+        const colors = ['#f27b88','#ff9c77','#ffc97c','#a6d994','#55d4da'];
+        meter.style.width = `${Math.max(8, (score + 1) * 20)}%`;
+        meter.style.background = colors[score];
+        strength.textContent = `Estimated strength: ${labels[score]}`;
+        const suggestions = [];
+        if (value.length < 14) suggestions.push('Make the example at least 14–16 characters long.');
+        if (categories < 3) suggestions.push('Try some different character types, when appropriate.');
+        if (obvious) suggestions.push('Avoid easy-to-guess words and number patterns.');
+        if (suggestions.length === 0) suggestions.push('Good demo! In real life, use a password manager and a unique password for each account.');
+        tips.textContent = suggestions.join(' ');
+      }
+      field.addEventListener('input', update);
+      clear.addEventListener('click', () => { field.value = ''; update(); field.focus(); });
+      // Remove the value when leaving the page, including a browser back-forward cache restore.
+      window.addEventListener('pagehide', () => { field.value = ''; });
+      window.addEventListener('pageshow', () => { field.value = ''; update(); });
+    })();
+  </script>
+</body>
+</html>

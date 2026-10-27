@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Chapter 6: Input and Output Devices. Learn about keyboards, mice, scanners, microphones, monitors, printers, speakers, and projectors, with pictures and explanations.">
+  <title>Input &amp; Output Devices | My Personal Website</title>
+  <style>
+    :root { color-scheme:dark; --bg:#08111f; --panel:#111f32; --text:#edf5ff; --muted:#b5c6d9; --accent:#55d4da; --line:#32445c; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; background:linear-gradient(180deg,#0b1930 0,#08111f 400px); color:var(--text); font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif; line-height:1.65; }
+    a { color:#9be9ee; }
+    a:focus-visible { outline:3px solid #ffc97c; outline-offset:4px; }
+    .skip { position:absolute; left:-9999px; top:1rem; background:white; color:black; padding:.5rem; z-index:10; }
+    .skip:focus { left:1rem; }
+    .topbar { background:rgba(8,17,31,.96); border-bottom:1px solid var(--line); }
+    .navwrap { max-width:1100px; margin:auto; display:flex; gap:1rem; align-items:center; justify-content:space-between; flex-wrap:wrap; padding:1rem 1.2rem; }
+    .brand { font-weight:800; font-size:1.05rem; text-decoration:none; color:white; letter-spacing:.02em; }
+    nav { display:flex; flex-wrap:wrap; gap:.3rem; }
+    nav a { text-decoration:none; color:var(--muted); font-size:.91rem; border-radius:9px; padding:.4rem .62rem; }
+    nav a:hover, nav a[aria-current="page"] { color:#07131d; background:var(--accent); }
+    .container { width:min(100% - 2.3rem, 950px); margin:auto; }
+    .hero { padding:4rem 0 2rem; }
+    .eyebrow { display:inline-block; text-transform:uppercase; color:var(--accent); font-size:.76rem; letter-spacing:.14em; font-weight:800; }
+    h1 { font-size:clamp(2.1rem,6vw,3.5rem); line-height:1.14; margin:.8rem 0 1rem; letter-spacing:-.04em; }
+    .lead { max-width:760px; color:var(--muted); font-size:1.1rem; }
+    .intro { border:1px solid var(--line); background:rgba(85,212,218,.065); padding:1.1rem 1.3rem; border-radius:15px; margin:1.8rem 0; }
+    .jump-links { display:flex; flex-wrap:wrap; gap:.7rem; margin:1rem 0; }
+    .jump-links a { text-decoration:none; display:inline-block; border:1px solid #50748a; border-radius:99px; padding:.65rem 1rem; background:#15304b; font-weight:700; }
+    .jump-links a:hover { border-color:var(--accent); background:#1d3e58; }
+    .device-section { margin:1.5rem 0 3rem; scroll-margin-top:1rem; }
+    .section-head { margin:1.5rem 0; }
+    h2 { font-size:clamp(1.6rem,4vw,2.2rem); margin:.4rem 0; letter-spacing:-.02em; }
+    .section-head p { color:var(--muted); margin:.4rem 0 0; }
+    .device-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(275px,1fr)); gap:1rem; }
+    .device-card { background:var(--panel); border:1px solid var(--line); border-radius:17px; overflow:hidden; display:flex; flex-direction:column; }
+    .device-photo { margin:0; background:#0c2036; border-bottom:1px solid var(--line); }
+    .device-photo img { width:100%; height:auto; aspect-ratio:18 / 11; display:block; object-fit:cover; }
+    .card-copy { padding:1.2rem 1.35rem 1.45rem; }
+    .device-kind { font-size:.72rem; font-weight:800; color:var(--accent); letter-spacing:.12em; display:flex; justify-content:space-between; }
+    .number { color:#9fb0c6; }
+    .device-card h3 { margin:.5rem 0 .3rem; font-size:1.4rem; }
+    .device-card p { color:var(--muted); margin:.3rem 0 0; }
+    .summary { border:1px solid #50748a; background:linear-gradient(135deg,#162d47,#102139); padding:1.35rem; border-radius:16px; margin:0 0 3rem; }
+    .summary h2 { font-size:1.45rem; }
+    .summary p { margin:.65rem 0; }
+    footer { text-align:center; padding:2rem 1rem 3rem; border-top:1px solid var(--line); color:var(--muted); }
+    @media(max-width:680px) { .navwrap { align-items:flex-start; } .hero { padding-top:2.5rem; } }
+    @media(prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="topbar">
+    <div class="navwrap">
+      <a class="brand" href="index.html">My Personal Website</a>
+      <nav aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="internet.html">Internet</a>
+        <a href="hardware.html">Hardware</a>
+        <a href="io.html" aria-current="page">Input &amp; Output</a>
+        <a href="security.html">Security &amp; Ethics</a>
+      </nav>
+    </div>
+  </div>
+  <main id="main" class="container">
+    <header class="hero">
+      <div class="eyebrow">Chapter 6 • Input and Output</div>
+      <h1>Input &amp; Output Devices</h1>
+      <p class="lead">Computers use input and output devices to communicate with people. Here are eight common examples, what they look like, and what each one does.</p>
+      <div class="intro"><strong>The difference:</strong> Input devices send information <em>into</em> a computer. Output devices present information <em>from</em> a computer.</div>
+      <div class="jump-links"><a href="#input">Explore Input Devices ↓</a><a href="#output">Explore Output Devices ↓</a></div>
+    </header>
+    <section id="input" class="device-section" aria-labelledby="input-heading">
+      <div class="section-head">
+        <span class="eyebrow">01 / GIVING INFORMATION</span>
+        <h2 id="input-heading">Input Devices</h2>
+        <p>Input devices let people send information and instructions to a computer.</p>
+      </div>
+      <div class="device-grid">
+        <article class="device-card">
+      <figure class="device-photo">
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI3MjAiIGhlaWdodD0iNDQwIiB2aWV3Qm94PSIwIDAgMzYwIDIyMCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsPSJJbGx1c3RyYXRpb24gb2YgYSBrZXlib2FyZCI+CiAgICA8ZGVmcz4KPGxpbmVhckdyYWRpZW50IGlkPSJib2R5IiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0iIzM0NTc3YiIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzE3MmY0ZCIvPjwvbGluZWFyR3JhZGllbnQ+CjxsaW5lYXJHcmFkaWVudCBpZD0ic2NyZWVuIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0iIzMwYmRkMiIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzYxN2VmZiIvPjwvbGluZWFyR3JhZGllbnQ+CjxsaW5lYXJHcmFkaWVudCBpZD0iaGlnaGxpZ2h0IiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0iIzliZWZmMSIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzdjOWJmZiIvPjwvbGluZWFyR3JhZGllbnQ+CjxmaWx0ZXIgaWQ9Imdsb3ciPjxmZUdhdXNzaWFuQmx1ciBzdGREZXZpYXRpb249IjExIiAvPjwvZmlsdGVyPgo8L2RlZnM+CiAgICA8cmVjdCB3aWR0aD0iMzYwIiBoZWlnaHQ9IjIyMCIgcng9IjIyIiBmaWxsPSIjMGMyMDM2Ii8+CiAgICA8Y2lyY2xlIGN4PSIyNzciIGN5PSI0NSIgcj0iNzEiIGZpbGw9IiMyNGMyY2MiIG9wYWNpdHk9Ii4xMiIgZmlsdGVyPSJ1cmwoI2dsb3cpIi8+CiAgICA8Y2lyY2xlIGN4PSI2MyIgY3k9IjE4MCIgcj0iODAiIGZpbGw9IiM3MThiZmYiIG9wYWNpdHk9Ii4xNCIgZmlsdGVyPSJ1cmwoI2dsb3cpIi8+CiAgICA8cGF0aCBkPSJNMjQgMTk1SDMzNiIgc3Ryb2tlPSIjMzc2MTdiIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1kYXNoYXJyYXk9IjMgOSIvPgogICAgPHJlY3QgeD0iNDgiIHk9IjcyIiB3aWR0aD0iMjY0IiBoZWlnaHQ9IjEyNCIgcng9IjE4IiBmaWxsPSIjMGIxYjMwIiBzdHJva2U9IiM3ZWQ4ZTAiIHN0cm9rZS13aWR0aD0iMyIvPgo8cmVjdCB4PSI1OSIgeT0iODIiIHdpZHRoPSIyNDIiIGhlaWdodD0iMTA0IiByeD0iMTIiIGZpbGw9InVybCgjYm9keSkiLz48cmVjdCB4PSI3MiIgeT0iOTkiIHdpZHRoPSIyNSIgaGVpZ2h0PSIxNSIgcng9IjMiIGZpbGw9IiM2MmM4ZDMiIG9wYWNpdHk9Ii44NyIvPjxyZWN0IHg9IjEwMiIgeT0iOTkiIHdpZHRoPSIyNSIgaGVpZ2h0PSIxNSIgcng9IjMiIGZpbGw9IiM2MmM4ZDMiIG9wYWNpdHk9Ii44NyIvPjxyZWN0IHg9IjEzMiIgeT0iOTkiIHdpZHRoPSIyNSIgaGVpZ2h0PSIxNSIgcng9IjMiIGZpbGw9IiM2MmM4ZDMiIG9wYWNpdHk9Ii44NyIvPjxyZWN0IHg9IjE2MiIgeT0iOTkiIHdpZHRoPSIyNSIgaGVpZ2h0PSIxNSIgcng9IjMiIGZpbGw9IiM2MmM4ZDMiIG9wYWNpdHk9Ii44NyIvPjxyZWN0IHg9IjE5MiIgeT0iOTkiIHdpZHRoPSIyNSIgaGVpZ2h0PSIxNSIgcng9IjMiIGZpbGw9IiM2MmM4ZDMiIG9wYWNpdHk9Ii44NyIvPjxyZWN0IHg9IjIyMiIgeT0iOTkiIHdpZHRoPSIyNSIgaGVpZ2h0PSIxNSIgcng9IjMiIGZpbGw9IiM2MmM4ZDMiIG9wYWNpdHk9Ii44NyIvPjxyZWN0IHg9IjI1MiIgeT0iOTkiIHdpZHRoPSIyNSIgaGVpZ2h0PSIxNSIgcng9IjMiIGZpbGw9IiM2MmM4ZDMiIG9wYWNpdHk9Ii44NyIvPjxyZWN0IHg9IjI4MiIgeT0iOTkiIHdpZHRoPSIyNSIgaGVpZ2h0PSIxNSIgcng9IjMiIGZpbGw9IiM2MmM4ZDMiIG9wYWNpdHk9Ii44NyIvPjxyZWN0IHg9IjcyIiB5PSIxMjAiIHdpZHRoPSIyNSIgaGVpZ2h0PSIxNSIgcng9IjMiIGZpbGw9IiNiOGNjZTQiIG9wYWNpdHk9Ii43NCIvPjxyZWN0IHg9IjEwMiIgeT0iMTIwIiB3aWR0aD0iMjUiIGhlaWdodD0iMTUiIHJ4PSIzIiBmaWxsPSIjYjhjY2U0IiBvcGFjaXR5PSIuNzQiLz48cmVjdCB4PSIxMzIiIHk9IjEyMCIgd2lkdGg9IjI1IiBoZWlnaHQ9IjE1IiByeD0iMyIgZmlsbD0iI2I4Y2NlNCIgb3BhY2l0eT0iLjc0Ii8+PHJlY3QgeD0iMTYyIiB5PSIxMjAiIHdpZHRoPSIyNSIgaGVpZ2h0PSIxNSIgcng9IjMiIGZpbGw9IiNiOGNjZTQiIG9wYWNpdHk9Ii43NCIvPjxyZWN0IHg9IjE5MiIgeT0iMTIwIiB3aWR0aD0iMjUiIGhlaWdodD0iMTUiIHJ4PSIzIiBmaWxsPSIjYjhjY2U0IiBvcGFjaXR5PSIuNzQiLz48cmVjdCB4PSIyMjIiIHk9IjEyMCIgd2lkdGg9IjI1IiBoZWlnaHQ9IjE1IiByeD0iMyIgZmlsbD0iI2I4Y2NlNCIgb3BhY2l0eT0iLjc0Ii8+PHJlY3QgeD0iMjUyIiB5PSIxMjAiIHdpZHRoPSIyNSIgaGVpZ2h0PSIxNSIgcng9IjMiIGZpbGw9IiNiOGNjZTQiIG9wYWNpdHk9Ii43NCIvPjxyZWN0IHg9IjI4MiIgeT0iMTIwIiB3aWR0aD0iMjUiIGhlaWdodD0iMTUiIHJ4PSIzIiBmaWxsPSIjYjhjY2U0IiBvcGFjaXR5PSIuNzQiLz48cmVjdCB4PSI3MiIgeT0iMTQxIiB3aWR0aD0iMjUiIGhlaWdodD0iMTUiIHJ4PSIzIiBmaWxsPSIjYjhjY2U0IiBvcGFjaXR5PSIuNzQiLz48cmVjdCB4PSIxMDIiIHk9IjE0MSIgd2lkdGg9IjI1IiBoZWlnaHQ9IjE1IiByeD0iMyIgZmlsbD0iI2I4Y2NlNCIgb3BhY2l0eT0iLjc0Ii8+PHJlY3QgeD0iMTMyIiB5PSIxNDEiIHdpZHRoPSIyNSIgaGVpZ2h0PSIxNSIgcng9IjMiIGZpbGw9IiNiOGNjZTQiIG9wYWNpdHk9Ii43NCIvPjxyZWN0IHg9IjE2MiIgeT0iMTQxIiB3aWR0aD0iMjUiIGhlaWdodD0iMTUiIHJ4PSIzIiBmaWxsPSIjYjhjY2U0IiBvcGFjaXR5PSIuNzQiLz48cmVjdCB4PSIxOTIiIHk9IjE0MSIgd2lkdGg9IjI1IiBoZWlnaHQ9IjE1IiByeD0iMyIgZmlsbD0iI2I4Y2NlNCIgb3BhY2l0eT0iLjc0Ii8+PHJlY3QgeD0iMjIyIiB5PSIxNDEiIHdpZHRoPSIyNSIgaGVpZ2h0PSIxNSIgcng9IjMiIGZpbGw9IiNiOGNjZTQiIG9wYWNpdHk9Ii43NCIvPjxyZWN0IHg9IjI1MiIgeT0iMTQxIiB3aWR0aD0iMjUiIGhlaWdodD0iMTUiIHJ4PSIzIiBmaWxsPSIjYjhjY2U0IiBvcGFjaXR5PSIuNzQiLz48cmVjdCB4PSIyODIiIHk9IjE0MSIgd2lkdGg9IjI1IiBoZWlnaHQ9IjE1IiByeD0iMyIgZmlsbD0iI2I4Y2NlNCIgb3BhY2l0eT0iLjc0Ii8+PHJlY3QgeD0iNzIiIHk9IjE2MiIgd2lkdGg9IjI1IiBoZWlnaHQ9IjE1IiByeD0iMyIgZmlsbD0iI2I4Y2NlNCIgb3BhY2l0eT0iLjc0Ii8+PHJlY3QgeD0iMTAyIiB5PSIxNjIiIHdpZHRoPSIyNSIgaGVpZ2h0PSIxNSIgcng9IjMiIGZpbGw9IiNiOGNjZTQiIG9wYWNpdHk9Ii43NCIvPjxyZWN0IHg9IjEzMiIgeT0iMTYyIiB3aWR0aD0iMjUiIGhlaWdodD0iMTUiIHJ4PSIzIiBmaWxsPSIjYjhjY2U0IiBvcGFjaXR5PSIuNzQiLz48cmVjdCB4PSIxNjIiIHk9IjE2MiIgd2lkdGg9IjI1IiBoZWlnaHQ9IjE1IiByeD0iMyIgZmlsbD0iI2I4Y2NlNCIgb3BhY2l0eT0iLjc0Ii8+PHJlY3QgeD0iMTkyIiB5PSIxNjIiIHdpZHRoPSIyNSIgaGVpZ2h0PSIxNSIgcng9IjMiIGZpbGw9IiNiOGNjZTQiIG9wYWNpdHk9Ii43NCIvPjxyZWN0IHg9IjIyMiIgeT0iMTYyIiB3aWR0aD0iMjUiIGhlaWdodD0iMTUiIHJ4PSIzIiBmaWxsPSIjYjhjY2U0IiBvcGFjaXR5PSIuNzQiLz48cmVjdCB4PSIyNTIiIHk9IjE2MiIgd2lkdGg9IjI1IiBoZWlnaHQ9IjE1IiByeD0iMyIgZmlsbD0iI2I4Y2NlNCIgb3BhY2l0eT0iLjc0Ii8+PHJlY3QgeD0iMjgyIiB5PSIxNjIiIHdpZHRoPSIyNSIgaGVpZ2h0PSIxNSIgcng9IjMiIGZpbGw9IiNiOGNjZTQiIG9wYWNpdHk9Ii43NCIvPgo8cmVjdCB4PSIxMTYiIHk9IjE2NyIgd2lkdGg9IjEzMSIgaGVpZ2h0PSIxMiIgcng9IjUiIGZpbGw9IiNiOGNjZTQiIG9wYWNpdHk9Ii44NSIvPgo8cGF0aCBkPSJNMTgwIDcxVjQ4QzE4MCA0MCAxOTUgNDAgMTk1IDI3IiBmaWxsPSJub25lIiBzdHJva2U9IiM4N2FhY2QiIHN0cm9rZS13aWR0aD0iNCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CiAgICA8L3N2Zz4=" alt="Illustration of a keyboard" width="720" height="440" loading="lazy">
+      </figure>
+      <div class="card-copy">
+        <div class="device-kind">INPUT DEVICE <span class="number">01</span></div>
+        <h3>Keyboard</h3>
+        <p>A keyboard is an input device used to type letters, numbers, and commands into a computer. It is helpful for writing documents, searching the internet, and entering information.</p>
+      </div>
+    </article><article class="device-card">
+      <figure class="device-photo">
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI3MjAiIGhlaWdodD0iNDQwIiB2aWV3Qm94PSIwIDAgMzYwIDIyMCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsPSJJbGx1c3RyYXRpb24gb2YgYSBtb3VzZSI+CiAgICA8ZGVmcz4KPGxpbmVhckdyYWRpZW50IGlkPSJib2R5IiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0iIzM0NTc3YiIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzE3MmY0ZCIvPjwvbGluZWFyR3JhZGllbnQ+CjxsaW5lYXJHcmFkaWVudCBpZD0ic2NyZWVuIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0iIzMwYmRkMiIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzYxN2VmZiIvPjwvbGluZWFyR3JhZGllbnQ+CjxsaW5lYXJHcmFkaWVudCBpZD0iaGlnaGxpZ2h0IiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0iIzliZWZmMSIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzdjOWJmZiIvPjwvbGluZWFyR3JhZGllbnQ+CjxmaWx0ZXIgaWQ9Imdsb3ciPjxmZUdhdXNzaWFuQmx1ciBzdGREZXZpYXRpb249IjExIiAvPjwvZmlsdGVyPgo8L2RlZnM+CiAgICA8cmVjdCB3aWR0aD0iMzYwIiBoZWlnaHQ9IjIyMCIgcng9IjIyIiBmaWxsPSIjMGMyMDM2Ii8+CiAgICA8Y2lyY2xlIGN4PSIyNzciIGN5PSI0NSIgcj0iNzEiIGZpbGw9IiMyNGMyY2MiIG9wYWNpdHk9Ii4xMiIgZmlsdGVyPSJ1cmwoI2dsb3cpIi8+CiAgICA8Y2lyY2xlIGN4PSI2MyIgY3k9IjE4MCIgcj0iODAiIGZpbGw9IiM3MThiZmYiIG9wYWNpdHk9Ii4xNCIgZmlsdGVyPSJ1cmwoI2dsb3cpIi8+CiAgICA8cGF0aCBkPSJNMjQgMTk1SDMzNiIgc3Ryb2tlPSIjMzc2MTdiIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1kYXNoYXJyYXk9IjMgOSIvPgogICAgPHBhdGggZD0iTTE3MSA2MkMxNjggNDIgMTkyIDM5IDE5NCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjOGNhZWNjIiBzdHJva2Utd2lkdGg9IjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgo8cmVjdCB4PSIxMjEiIHk9IjQ3IiB3aWR0aD0iMTE5IiBoZWlnaHQ9IjE1NyIgcng9IjU3IiBmaWxsPSJ1cmwoI2JvZHkpIiBzdHJva2U9IiM4MGRjZTEiIHN0cm9rZS13aWR0aD0iNCIvPgo8cGF0aCBkPSJNMTgwIDQ4VjEwN00xMjYgMTA3SDIzNSIgc3Ryb2tlPSIjOGRiY2Q2IiBzdHJva2Utd2lkdGg9IjMiIG9wYWNpdHk9Ii44Ii8+CjxyZWN0IHg9IjE3MSIgeT0iNjgiIHdpZHRoPSIxOCIgaGVpZ2h0PSIzNSIgcng9IjkiIGZpbGw9InVybCgjaGlnaGxpZ2h0KSIvPgo8ZWxsaXBzZSBjeD0iMTU3IiBjeT0iMTYwIiByeD0iMTUiIHJ5PSIyNyIgZmlsbD0iIzZlZDhlMCIgb3BhY2l0eT0iLjE1Ii8+CiAgICA8L3N2Zz4=" alt="Illustration of a mouse" width="720" height="440" loading="lazy">
+      </figure>
+      <div class="card-copy">
+        <div class="device-kind">INPUT DEVICE <span class="number">02</span></div>
+        <h3>Mouse</h3>
+        <p>A mouse controls the pointer on a screen. Moving, clicking, and scrolling allow a user to select buttons, open programs, and move through web pages.</p>
+      </div>
+    </article><article class="device-card">
+      <figure class="device-photo">
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI3MjAiIGhlaWdodD0iNDQwIiB2aWV3Qm94PSIwIDAgMzYwIDIyMCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsPSJJbGx1c3RyYXRpb24gb2YgYSBzY2FubmVyIj4KICAgIDxkZWZzPgo8bGluZWFyR3JhZGllbnQgaWQ9ImJvZHkiIHgxPSIwIiB5MT0iMCIgeDI9IjEiIHkyPSIxIj48c3RvcCBzdG9wLWNvbG9yPSIjMzQ1NzdiIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMTcyZjRkIi8+PC9saW5lYXJHcmFkaWVudD4KPGxpbmVhckdyYWRpZW50IGlkPSJzY3JlZW4iIHgxPSIwIiB5MT0iMCIgeDI9IjEiIHkyPSIxIj48c3RvcCBzdG9wLWNvbG9yPSIjMzBiZGQyIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjNjE3ZWZmIi8+PC9saW5lYXJHcmFkaWVudD4KPGxpbmVhckdyYWRpZW50IGlkPSJoaWdobGlnaHQiIHgxPSIwIiB5MT0iMCIgeDI9IjEiIHkyPSIxIj48c3RvcCBzdG9wLWNvbG9yPSIjOWJlZmYxIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjN2M5YmZmIi8+PC9saW5lYXJHcmFkaWVudD4KPGZpbHRlciBpZD0iZ2xvdyI+PGZlR2F1c3NpYW5CbHVyIHN0ZERldmlhdGlvbj0iMTEiIC8+PC9maWx0ZXI+CjwvZGVmcz4KICAgIDxyZWN0IHdpZHRoPSIzNjAiIGhlaWdodD0iMjIwIiByeD0iMjIiIGZpbGw9IiMwYzIwMzYiLz4KICAgIDxjaXJjbGUgY3g9IjI3NyIgY3k9IjQ1IiByPSI3MSIgZmlsbD0iIzI0YzJjYyIgb3BhY2l0eT0iLjEyIiBmaWx0ZXI9InVybCgjZ2xvdykiLz4KICAgIDxjaXJjbGUgY3g9IjYzIiBjeT0iMTgwIiByPSI4MCIgZmlsbD0iIzcxOGJmZiIgb3BhY2l0eT0iLjE0IiBmaWx0ZXI9InVybCgjZ2xvdykiLz4KICAgIDxwYXRoIGQ9Ik0yNCAxOTVIMzM2IiBzdHJva2U9IiMzNzYxN2IiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWRhc2hhcnJheT0iMyA5Ii8+CiAgICA8cGF0aCBkPSJNOTQgNThMMjY5IDQwTDI5MyAxMTJMMTA0IDEzM1oiIGZpbGw9IiMwYzFkMzEiIHN0cm9rZT0iIzc3ZGJlMCIgc3Ryb2tlLXdpZHRoPSI0IiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CjxwYXRoIGQ9Ik0xMjIgNjhMMjUxIDU2TDI2NyAxMDNMMTI4IDExN1oiIGZpbGw9IiNkYWY0ZjUiIG9wYWNpdHk9Ii45MiIvPgo8cmVjdCB4PSI4NyIgeT0iMTIyIiB3aWR0aD0iMjEzIiBoZWlnaHQ9IjY0IiByeD0iMTMiIGZpbGw9InVybCgjYm9keSkiIHN0cm9rZT0iIzhiZDdkZiIgc3Ryb2tlLXdpZHRoPSIzIi8+CjxwYXRoIGQ9Ik04NyAxNTBIMzAwIiBzdHJva2U9IiM2MTg3YWUiIHN0cm9rZS13aWR0aD0iMyIvPgo8cmVjdCB4PSIxMDgiIHk9IjE2MSIgd2lkdGg9IjEwNCIgaGVpZ2h0PSI3IiByeD0iMyIgZmlsbD0iIzhhYWFjNSIvPgo8Y2lyY2xlIGN4PSIyNjgiIGN5PSIxNjIiIHI9IjYiIGZpbGw9IiM2ZWUxZDAiLz4KPHBhdGggZD0iTTE3NiAxMTlsNzQgLTciIHN0cm9rZT0iIzdlY2RlMCIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtZGFzaGFycmF5PSI0IDYiLz4KICAgIDwvc3ZnPg==" alt="Illustration of a scanner" width="720" height="440" loading="lazy">
+      </figure>
+      <div class="card-copy">
+        <div class="device-kind">INPUT DEVICE <span class="number">03</span></div>
+        <h3>Scanner</h3>
+        <p>A scanner takes a picture of a paper document or photograph and turns it into a digital file. It is often used to save or share printed information.</p>
+      </div>
+    </article><article class="device-card">
+      <figure class="device-photo">
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI3MjAiIGhlaWdodD0iNDQwIiB2aWV3Qm94PSIwIDAgMzYwIDIyMCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsPSJJbGx1c3RyYXRpb24gb2YgYSBtaWNyb3Bob25lIj4KICAgIDxkZWZzPgo8bGluZWFyR3JhZGllbnQgaWQ9ImJvZHkiIHgxPSIwIiB5MT0iMCIgeDI9IjEiIHkyPSIxIj48c3RvcCBzdG9wLWNvbG9yPSIjMzQ1NzdiIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMTcyZjRkIi8+PC9saW5lYXJHcmFkaWVudD4KPGxpbmVhckdyYWRpZW50IGlkPSJzY3JlZW4iIHgxPSIwIiB5MT0iMCIgeDI9IjEiIHkyPSIxIj48c3RvcCBzdG9wLWNvbG9yPSIjMzBiZGQyIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjNjE3ZWZmIi8+PC9saW5lYXJHcmFkaWVudD4KPGxpbmVhckdyYWRpZW50IGlkPSJoaWdobGlnaHQiIHgxPSIwIiB5MT0iMCIgeDI9IjEiIHkyPSIxIj48c3RvcCBzdG9wLWNvbG9yPSIjOWJlZmYxIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjN2M5YmZmIi8+PC9saW5lYXJHcmFkaWVudD4KPGZpbHRlciBpZD0iZ2xvdyI+PGZlR2F1c3NpYW5CbHVyIHN0ZERldmlhdGlvbj0iMTEiIC8+PC9maWx0ZXI+CjwvZGVmcz4KICAgIDxyZWN0IHdpZHRoPSIzNjAiIGhlaWdodD0iMjIwIiByeD0iMjIiIGZpbGw9IiMwYzIwMzYiLz4KICAgIDxjaXJjbGUgY3g9IjI3NyIgY3k9IjQ1IiByPSI3MSIgZmlsbD0iIzI0YzJjYyIgb3BhY2l0eT0iLjEyIiBmaWx0ZXI9InVybCgjZ2xvdykiLz4KICAgIDxjaXJjbGUgY3g9IjYzIiBjeT0iMTgwIiByPSI4MCIgZmlsbD0iIzcxOGJmZiIgb3BhY2l0eT0iLjE0IiBmaWx0ZXI9InVybCgjZ2xvdykiLz4KICAgIDxwYXRoIGQ9Ik0yNCAxOTVIMzM2IiBzdHJva2U9IiMzNzYxN2IiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWRhc2hhcnJheT0iMyA5Ii8+CiAgICA8cmVjdCB4PSIxNDkiIHk9IjM3IiB3aWR0aD0iNjQiIGhlaWdodD0iMTA3IiByeD0iMzIiIGZpbGw9InVybCgjYm9keSkiIHN0cm9rZT0iIzhjZTJlNSIgc3Ryb2tlLXdpZHRoPSI0Ii8+CjxwYXRoIGQ9Ik0xNTkgNjdIMjAzTTE1OSA4MkgyMDNNMTU5IDk3SDIwM00xNTkgMTEySDIwMyIgc3Ryb2tlPSIjOTJiZmQ2IiBzdHJva2Utd2lkdGg9IjMiLz4KPHBhdGggZD0iTTEzMSAxMDhWMTE4QzEzMSAxNzkgMjMxIDE3OSAyMzEgMTE4VjEwOCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjOWFlYmVjIiBzdHJva2Utd2lkdGg9IjgiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgo8cGF0aCBkPSJNMTgxIDE2N1YxOTVNMTQ1IDE5NUgyMTciIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2IxY2NlMCIgc3Ryb2tlLXdpZHRoPSI3IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KPGNpcmNsZSBjeD0iMTgyIiBjeT0iNTQiIHI9IjE3IiBmaWxsPSIjOTJlNWVmIiBvcGFjaXR5PSIuMTMiLz4KICAgIDwvc3ZnPg==" alt="Illustration of a microphone" width="720" height="440" loading="lazy">
+      </figure>
+      <div class="card-copy">
+        <div class="device-kind">INPUT DEVICE <span class="number">04</span></div>
+        <h3>Microphone</h3>
+        <p>A microphone captures sound and sends it to a computer or phone as audio input. People use it for video calls, voice recordings, and speech recognition.</p>
+      </div>
+    </article>
+      </div>
+    </section>
+    <section id="output" class="device-section" aria-labelledby="output-heading">
+      <div class="section-head">
+        <span class="eyebrow">02 / RECEIVING INFORMATION</span>
+        <h2 id="output-heading">Output Devices</h2>
+        <p>Output devices let a computer communicate results back to people.</p>
+      </div>
+      <div class="device-grid">
+        <article class="device-card">
+      <figure class="device-photo">
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI3MjAiIGhlaWdodD0iNDQwIiB2aWV3Qm94PSIwIDAgMzYwIDIyMCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsPSJJbGx1c3RyYXRpb24gb2YgYSBtb25pdG9yIj4KICAgIDxkZWZzPgo8bGluZWFyR3JhZGllbnQgaWQ9ImJvZHkiIHgxPSIwIiB5MT0iMCIgeDI9IjEiIHkyPSIxIj48c3RvcCBzdG9wLWNvbG9yPSIjMzQ1NzdiIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMTcyZjRkIi8+PC9saW5lYXJHcmFkaWVudD4KPGxpbmVhckdyYWRpZW50IGlkPSJzY3JlZW4iIHgxPSIwIiB5MT0iMCIgeDI9IjEiIHkyPSIxIj48c3RvcCBzdG9wLWNvbG9yPSIjMzBiZGQyIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjNjE3ZWZmIi8+PC9saW5lYXJHcmFkaWVudD4KPGxpbmVhckdyYWRpZW50IGlkPSJoaWdobGlnaHQiIHgxPSIwIiB5MT0iMCIgeDI9IjEiIHkyPSIxIj48c3RvcCBzdG9wLWNvbG9yPSIjOWJlZmYxIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjN2M5YmZmIi8+PC9saW5lYXJHcmFkaWVudD4KPGZpbHRlciBpZD0iZ2xvdyI+PGZlR2F1c3NpYW5CbHVyIHN0ZERldmlhdGlvbj0iMTEiIC8+PC9maWx0ZXI+CjwvZGVmcz4KICAgIDxyZWN0IHdpZHRoPSIzNjAiIGhlaWdodD0iMjIwIiByeD0iMjIiIGZpbGw9IiMwYzIwMzYiLz4KICAgIDxjaXJjbGUgY3g9IjI3NyIgY3k9IjQ1IiByPSI3MSIgZmlsbD0iIzI0YzJjYyIgb3BhY2l0eT0iLjEyIiBmaWx0ZXI9InVybCgjZ2xvdykiLz4KICAgIDxjaXJjbGUgY3g9IjYzIiBjeT0iMTgwIiByPSI4MCIgZmlsbD0iIzcxOGJmZiIgb3BhY2l0eT0iLjE0IiBmaWx0ZXI9InVybCgjZ2xvdykiLz4KICAgIDxwYXRoIGQ9Ik0yNCAxOTVIMzM2IiBzdHJva2U9IiMzNzYxN2IiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWRhc2hhcnJheT0iMyA5Ii8+CiAgICA8cmVjdCB4PSI2NCIgeT0iNDQiIHdpZHRoPSIyMzMiIGhlaWdodD0iMTQwIiByeD0iMTMiIGZpbGw9IiMwYjE3MjYiIHN0cm9rZT0iIzg0ZDlkZiIgc3Ryb2tlLXdpZHRoPSI0Ii8+CjxyZWN0IHg9Ijc1IiB5PSI1NSIgd2lkdGg9IjIxMSIgaGVpZ2h0PSIxMTMiIHJ4PSI1IiBmaWxsPSJ1cmwoI3NjcmVlbikiLz4KPHBhdGggZD0iTTc3IDE1M0wxNzMgNjRMMjMwIDY0TDExNyAxNjhINzdaIiBmaWxsPSIjZDhmZmZmIiBvcGFjaXR5PSIuMTciLz4KPHJlY3QgeD0iMTczIiB5PSIxODQiIHdpZHRoPSIxNSIgaGVpZ2h0PSIxOCIgZmlsbD0iIzc5OWViOCIvPgo8cGF0aCBkPSJNMTM1IDIwNkgyMjUiIHN0cm9rZT0iI2FhZDJlMSIgc3Ryb2tlLXdpZHRoPSIxMCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CjxjaXJjbGUgY3g9IjE4MCIgY3k9IjE3NiIgcj0iMyIgZmlsbD0iIzhjZTRlNCIvPgogICAgPC9zdmc+" alt="Illustration of a monitor" width="720" height="440" loading="lazy">
+      </figure>
+      <div class="card-copy">
+        <div class="device-kind">OUTPUT DEVICE <span class="number">05</span></div>
+        <h3>Monitor</h3>
+        <p>A monitor displays visual information from the computer, including text, photos, videos, and applications. It lets users see the results of their actions.</p>
+      </div>
+    </article><article class="device-card">
+      <figure class="device-photo">
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI3MjAiIGhlaWdodD0iNDQwIiB2aWV3Qm94PSIwIDAgMzYwIDIyMCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsPSJJbGx1c3RyYXRpb24gb2YgYSBwcmludGVyIj4KICAgIDxkZWZzPgo8bGluZWFyR3JhZGllbnQgaWQ9ImJvZHkiIHgxPSIwIiB5MT0iMCIgeDI9IjEiIHkyPSIxIj48c3RvcCBzdG9wLWNvbG9yPSIjMzQ1NzdiIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMTcyZjRkIi8+PC9saW5lYXJHcmFkaWVudD4KPGxpbmVhckdyYWRpZW50IGlkPSJzY3JlZW4iIHgxPSIwIiB5MT0iMCIgeDI9IjEiIHkyPSIxIj48c3RvcCBzdG9wLWNvbG9yPSIjMzBiZGQyIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjNjE3ZWZmIi8+PC9saW5lYXJHcmFkaWVudD4KPGxpbmVhckdyYWRpZW50IGlkPSJoaWdobGlnaHQiIHgxPSIwIiB5MT0iMCIgeDI9IjEiIHkyPSIxIj48c3RvcCBzdG9wLWNvbG9yPSIjOWJlZmYxIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjN2M5YmZmIi8+PC9saW5lYXJHcmFkaWVudD4KPGZpbHRlciBpZD0iZ2xvdyI+PGZlR2F1c3NpYW5CbHVyIHN0ZERldmlhdGlvbj0iMTEiIC8+PC9maWx0ZXI+CjwvZGVmcz4KICAgIDxyZWN0IHdpZHRoPSIzNjAiIGhlaWdodD0iMjIwIiByeD0iMjIiIGZpbGw9IiMwYzIwMzYiLz4KICAgIDxjaXJjbGUgY3g9IjI3NyIgY3k9IjQ1IiByPSI3MSIgZmlsbD0iIzI0YzJjYyIgb3BhY2l0eT0iLjEyIiBmaWx0ZXI9InVybCgjZ2xvdykiLz4KICAgIDxjaXJjbGUgY3g9IjYzIiBjeT0iMTgwIiByPSI4MCIgZmlsbD0iIzcxOGJmZiIgb3BhY2l0eT0iLjE0IiBmaWx0ZXI9InVybCgjZ2xvdykiLz4KICAgIDxwYXRoIGQ9Ik0yNCAxOTVIMzM2IiBzdHJva2U9IiMzNzYxN2IiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWRhc2hhcnJheT0iMyA5Ii8+CiAgICA8cmVjdCB4PSIxMjEiIHk9IjMxIiB3aWR0aD0iMTI0IiBoZWlnaHQ9Ijg2IiByeD0iNiIgZmlsbD0iI2UzZjFmYiIvPgo8cGF0aCBkPSJNMTM5IDQ5SDIyN00xMzkgNjFIMjI3TTEzOSA3M0gyMDkiIHN0cm9rZT0iIzhiYWFjMCIgc3Ryb2tlLXdpZHRoPSI0IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KPHJlY3QgeD0iODAiIHk9Ijg1IiB3aWR0aD0iMjAzIiBoZWlnaHQ9IjkzIiByeD0iMTQiIGZpbGw9InVybCgjYm9keSkiIHN0cm9rZT0iIzhjZTBlNSIgc3Ryb2tlLXdpZHRoPSI0Ii8+CjxyZWN0IHg9IjEwNyIgeT0iMTUwIiB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1IiByeD0iNSIgZmlsbD0iIzBhMWIzMCIvPgo8cGF0aCBkPSJNMTExIDE2MkgyNDlMMjM4IDE5OEgxMjRaIiBmaWxsPSIjZTRmNGZhIi8+CjxwYXRoIGQ9Ik0xMzcgMTc4SDIyNE0xMzcgMTg3SDIwNiIgc3Ryb2tlPSIjOTViN2NlIiBzdHJva2Utd2lkdGg9IjMiLz4KPGNpcmNsZSBjeD0iMjUyIiBjeT0iMTA4IiByPSI2IiBmaWxsPSIjNjNlMmJlIi8+CjxwYXRoIGQ9Ik0xMDIgMTI4SDI1OCIgc3Ryb2tlPSIjNDc2ZTkwIiBzdHJva2Utd2lkdGg9IjMiLz4KICAgIDwvc3ZnPg==" alt="Illustration of a printer" width="720" height="440" loading="lazy">
+      </figure>
+      <div class="card-copy">
+        <div class="device-kind">OUTPUT DEVICE <span class="number">06</span></div>
+        <h3>Printer</h3>
+        <p>A printer produces a physical copy of digital documents or images on paper. It can be used to print school assignments, forms, and photographs.</p>
+      </div>
+    </article><article class="device-card">
+      <figure class="device-photo">
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI3MjAiIGhlaWdodD0iNDQwIiB2aWV3Qm94PSIwIDAgMzYwIDIyMCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsPSJJbGx1c3RyYXRpb24gb2YgYSBzcGVha2VycyI+CiAgICA8ZGVmcz4KPGxpbmVhckdyYWRpZW50IGlkPSJib2R5IiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0iIzM0NTc3YiIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzE3MmY0ZCIvPjwvbGluZWFyR3JhZGllbnQ+CjxsaW5lYXJHcmFkaWVudCBpZD0ic2NyZWVuIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0iIzMwYmRkMiIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzYxN2VmZiIvPjwvbGluZWFyR3JhZGllbnQ+CjxsaW5lYXJHcmFkaWVudCBpZD0iaGlnaGxpZ2h0IiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0iIzliZWZmMSIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzdjOWJmZiIvPjwvbGluZWFyR3JhZGllbnQ+CjxmaWx0ZXIgaWQ9Imdsb3ciPjxmZUdhdXNzaWFuQmx1ciBzdGREZXZpYXRpb249IjExIiAvPjwvZmlsdGVyPgo8L2RlZnM+CiAgICA8cmVjdCB3aWR0aD0iMzYwIiBoZWlnaHQ9IjIyMCIgcng9IjIyIiBmaWxsPSIjMGMyMDM2Ii8+CiAgICA8Y2lyY2xlIGN4PSIyNzciIGN5PSI0NSIgcj0iNzEiIGZpbGw9IiMyNGMyY2MiIG9wYWNpdHk9Ii4xMiIgZmlsdGVyPSJ1cmwoI2dsb3cpIi8+CiAgICA8Y2lyY2xlIGN4PSI2MyIgY3k9IjE4MCIgcj0iODAiIGZpbGw9IiM3MThiZmYiIG9wYWNpdHk9Ii4xNCIgZmlsdGVyPSJ1cmwoI2dsb3cpIi8+CiAgICA8cGF0aCBkPSJNMjQgMTk1SDMzNiIgc3Ryb2tlPSIjMzc2MTdiIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1kYXNoYXJyYXk9IjMgOSIvPgogICAgPHJlY3QgeD0iNzkiIHk9IjQzIiB3aWR0aD0iODgiIGhlaWdodD0iMTUxIiByeD0iMTIiIGZpbGw9InVybCgjYm9keSkiIHN0cm9rZT0iIzkwZGJlMyIgc3Ryb2tlLXdpZHRoPSI0Ii8+CjxyZWN0IHg9IjE5NSIgeT0iNDMiIHdpZHRoPSI4OCIgaGVpZ2h0PSIxNTEiIHJ4PSIxMiIgZmlsbD0idXJsKCNib2R5KSIgc3Ryb2tlPSIjOTBkYmUzIiBzdHJva2Utd2lkdGg9IjQiLz4KPGNpcmNsZSBjeD0iMTIzIiBjeT0iMTMwIiByPSIyOSIgZmlsbD0iIzA5MWQzMiIgc3Ryb2tlPSIjNjk5Y2I5IiBzdHJva2Utd2lkdGg9IjQiLz48Y2lyY2xlIGN4PSIxMjMiIGN5PSIxMzAiIHI9IjE1IiBmaWxsPSJ1cmwoI3NjcmVlbikiLz4KPGNpcmNsZSBjeD0iMjM5IiBjeT0iMTMwIiByPSIyOSIgZmlsbD0iIzA5MWQzMiIgc3Ryb2tlPSIjNjk5Y2I5IiBzdHJva2Utd2lkdGg9IjQiLz48Y2lyY2xlIGN4PSIyMzkiIGN5PSIxMzAiIHI9IjE1IiBmaWxsPSJ1cmwoI3NjcmVlbikiLz4KPGNpcmNsZSBjeD0iMTIzIiBjeT0iNzkiIHI9IjEyIiBmaWxsPSIjMGIxZTMzIiBzdHJva2U9IiM4NmU0ZTkiIHN0cm9rZS13aWR0aD0iNCIvPgo8Y2lyY2xlIGN4PSIyMzkiIGN5PSI3OSIgcj0iMTIiIGZpbGw9IiMwYjFlMzMiIHN0cm9rZT0iIzg2ZTRlOSIgc3Ryb2tlLXdpZHRoPSI0Ii8+CjxwYXRoIGQ9Ik0yOTIgODdxMjIgMTYgMCAzMk0zMDcgNzdxMzcgMjcgMCA1MyIgc3Ryb2tlPSIjODNlY2VkIiBzdHJva2Utd2lkdGg9IjQiIGZpbGw9Im5vbmUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgb3BhY2l0eT0iLjY1Ii8+CiAgICA8L3N2Zz4=" alt="Illustration of a speakers" width="720" height="440" loading="lazy">
+      </figure>
+      <div class="card-copy">
+        <div class="device-kind">OUTPUT DEVICE <span class="number">07</span></div>
+        <h3>Speakers</h3>
+        <p>Speakers turn digital audio signals into sounds that people can hear. They are used for music, videos, notifications, and online meetings.</p>
+      </div>
+    </article><article class="device-card">
+      <figure class="device-photo">
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI3MjAiIGhlaWdodD0iNDQwIiB2aWV3Qm94PSIwIDAgMzYwIDIyMCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsPSJJbGx1c3RyYXRpb24gb2YgYSBwcm9qZWN0b3IiPgogICAgPGRlZnM+CjxsaW5lYXJHcmFkaWVudCBpZD0iYm9keSIgeDE9IjAiIHkxPSIwIiB4Mj0iMSIgeTI9IjEiPjxzdG9wIHN0b3AtY29sb3I9IiMzNDU3N2IiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMxNzJmNGQiLz48L2xpbmVhckdyYWRpZW50Pgo8bGluZWFyR3JhZGllbnQgaWQ9InNjcmVlbiIgeDE9IjAiIHkxPSIwIiB4Mj0iMSIgeTI9IjEiPjxzdG9wIHN0b3AtY29sb3I9IiMzMGJkZDIiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiM2MTdlZmYiLz48L2xpbmVhckdyYWRpZW50Pgo8bGluZWFyR3JhZGllbnQgaWQ9ImhpZ2hsaWdodCIgeDE9IjAiIHkxPSIwIiB4Mj0iMSIgeTI9IjEiPjxzdG9wIHN0b3AtY29sb3I9IiM5YmVmZjEiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiM3YzliZmYiLz48L2xpbmVhckdyYWRpZW50Pgo8ZmlsdGVyIGlkPSJnbG93Ij48ZmVHYXVzc2lhbkJsdXIgc3RkRGV2aWF0aW9uPSIxMSIgLz48L2ZpbHRlcj4KPC9kZWZzPgogICAgPHJlY3Qgd2lkdGg9IjM2MCIgaGVpZ2h0PSIyMjAiIHJ4PSIyMiIgZmlsbD0iIzBjMjAzNiIvPgogICAgPGNpcmNsZSBjeD0iMjc3IiBjeT0iNDUiIHI9IjcxIiBmaWxsPSIjMjRjMmNjIiBvcGFjaXR5PSIuMTIiIGZpbHRlcj0idXJsKCNnbG93KSIvPgogICAgPGNpcmNsZSBjeD0iNjMiIGN5PSIxODAiIHI9IjgwIiBmaWxsPSIjNzE4YmZmIiBvcGFjaXR5PSIuMTQiIGZpbHRlcj0idXJsKCNnbG93KSIvPgogICAgPHBhdGggZD0iTTI0IDE5NUgzMzYiIHN0cm9rZT0iIzM3NjE3YiIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtZGFzaGFycmF5PSIzIDkiLz4KICAgIDxwYXRoIGQ9Ik0yNzQgNzRMMzQyIDQ3VjE4M0wyNzQgMTQ5WiIgZmlsbD0iIzgzZGNmNSIgb3BhY2l0eT0iLjE2Ii8+CjxyZWN0IHg9IjcxIiB5PSI4MCIgd2lkdGg9IjIyNCIgaGVpZ2h0PSI5MCIgcng9IjE3IiBmaWxsPSJ1cmwoI2JvZHkpIiBzdHJva2U9IiM4ZmUxZTUiIHN0cm9rZS13aWR0aD0iNCIvPgo8Y2lyY2xlIGN4PSIyNDkiIGN5PSIxMjUiIHI9IjMxIiBmaWxsPSIjMDcxNzJhIiBzdHJva2U9IiNhOGRlZjAiIHN0cm9rZS13aWR0aD0iNSIvPgo8Y2lyY2xlIGN4PSIyNDkiIGN5PSIxMjUiIHI9IjE5IiBmaWxsPSJ1cmwoI3NjcmVlbikiLz4KPGNpcmNsZSBjeD0iMjQ5IiBjeT0iMTI1IiByPSI4IiBmaWxsPSIjZDdmYmZmIiBvcGFjaXR5PSIuOSIvPgo8cGF0aCBkPSJNOTAgMTAxSDE4OE05MCAxMTNIMTg4TTkwIDEyNUgxNjUiIHN0cm9rZT0iIzcyOTdiNyIgc3Ryb2tlLXdpZHRoPSI1IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KPGNpcmNsZSBjeD0iMTAzIiBjeT0iMTQ5IiByPSI1IiBmaWxsPSIjNmFlMWJlIi8+CjxwYXRoIGQ9Ik05MyAxNzB2MThNMjc3IDE3MHYxOCIgc3Ryb2tlPSIjODdhYmM3IiBzdHJva2Utd2lkdGg9IjgiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgogICAgPC9zdmc+" alt="Illustration of a projector" width="720" height="440" loading="lazy">
+      </figure>
+      <div class="card-copy">
+        <div class="device-kind">OUTPUT DEVICE <span class="number">08</span></div>
+        <h3>Projector</h3>
+        <p>A projector displays a computer’s images or videos on a larger surface, such as a screen or wall. It is useful for classroom lessons and presentations.</p>
+      </div>
+    </article>
+      </div>
+    </section>
+    <section class="summary" aria-labelledby="remember-heading">
+      <h2 id="remember-heading">Quick Review</h2>
+      <p><strong>Input:</strong> A keyboard, mouse, scanner, and microphone help people send data to a computer.</p>
+      <p><strong>Output:</strong> A monitor, printer, speakers, and projector help people see, hear, or print information from a computer.</p>
+      <p>Some devices, such as a touchscreen, can act as both input and output devices.</p>
+    </section>
+  </main>
+  <footer>My Personal Website • Digital Citizenship • Assignment 7</footer>
+</body>
+</html>

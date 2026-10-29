@@ -1,215 +1,32 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sebastian Rodriguez | Digital Citizen Portfolio</title>
-  <style>
-    * { box-sizing: border-box; scroll-behavior: smooth; }
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: #f5f7fa;
-      color: #1f2937;
-      line-height: 1.65;
-    }
-    header {
-      background: #111827;
-      color: white;
-      padding: 64px 20px 52px;
-      text-align: center;
-    }
-    header h1 { margin: 0 0 10px; font-size: 2.6rem; }
-    header p { margin: 5px 0; color: #d1d5db; }
-    nav {
-      position: sticky;
-      top: 0;
-      z-index: 10;
-      background: white;
-      text-align: center;
-      padding: 16px 10px;
-      box-shadow: 0 2px 10px rgba(0,0,0,.08);
-    }
-    nav a {
-      display: inline-block;
-      color: #111827;
-      text-decoration: none;
-      font-weight: 700;
-      margin: 5px 10px;
-    }
-    nav a:hover { text-decoration: underline; }
-    main {
-      max-width: 950px;
-      margin: 34px auto;
-      padding: 0 18px;
-    }
-    section {
-      background: white;
-      margin-bottom: 22px;
-      padding: 28px;
-      border-radius: 14px;
-      box-shadow: 0 3px 14px rgba(0,0,0,.07);
-    }
-    h2 { margin-top: 0; color: #111827; }
-    .tag {
-      display: inline-block;
-      background: #e5e7eb;
-      padding: 7px 11px;
-      margin: 4px;
-      border-radius: 999px;
-      font-size: .92rem;
-    }
-    .sitemap {
-      background: #f3f4f6;
-      border-left: 4px solid #374151;
-      padding: 18px;
-      font-family: monospace;
-      white-space: pre-line;
-      border-radius: 8px;
-    }
-    footer {
-      background: #111827;
-      color: #d1d5db;
-      text-align: center;
-      padding: 28px 15px;
-      margin-top: 40px;
-    }
-    @media (max-width: 600px) {
-      header h1 { font-size: 2rem; }
-      nav a { margin: 4px 6px; font-size: .9rem; }
-      section { padding: 21px; }
-    }
-  </style>
-</head>
-<body>
-
-<header id="home">
-  <h1>Digital Citizen Portfolio</h1>
-  <p>Sebastian Rodriguez</p>
-  <p>CS 125 Semester-Long Project</p>
-</header>
-
-<nav>
-  <a href="#home">Home</a>
-  <a href="#about">About Me</a>
-  <a href="#education">Education</a>
-  <a href="#skills">Skills</a>
-  <a href="#projects">Projects</a>
-  <a href="#security">Security</a>
-  <a href="#ai">AI</a>
-  <a href="#contact">Contact</a>
-</nav>
-
-<main>
-  <section>
-    <h2>Website Purpose</h2>
-    <p>
-      The purpose of my Digital Citizen Portfolio is to document what I learn
-      throughout CS 125 and show my growth in technology and digital citizenship.
-      Throughout the semester, I will add work involving computer hardware,
-      software, security, networking, databases, programming, web development,
-      technology careers, and artificial intelligence.
-    </p>
-  </section>
-
-  <section>
-    <h2>Target Audience</h2>
-    <p>
-      This website is designed for my professor, classmates, and anyone interested
-      in seeing what I learn and accomplish throughout CS 125. It can also serve
-      as a professional portfolio that demonstrates my developing technology skills.
-    </p>
-  </section>
-
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      My name is Sebastian Rodriguez. I am a college student interested in
-      business, technology, sports, and personal growth. I enjoy learning new
-      skills and challenging myself. This website will show my progress throughout
-      CS 125 and how my understanding of technology develops during the semester.
-    </p>
-  </section>
-
-  <section id="education">
-    <h2>Education</h2>
-    <p>
-      I am currently attending college and continuing to build skills that can
-      help me academically, professionally, and in my future career. CS 125 is
-      helping me better understand the technology that is used in everyday life
-      and in the workplace.
-    </p>
-  </section>
-
-  <section id="skills">
-    <h2>Skills</h2>
-    <span class="tag">Communication</span>
-    <span class="tag">Teamwork</span>
-    <span class="tag">Leadership</span>
-    <span class="tag">Problem Solving</span>
-    <span class="tag">Digital Literacy</span>
-    <span class="tag">Computer Skills</span>
-    <p>
-      I will continue updating this section as I develop new technical skills
-      throughout the course.
-    </p>
-  </section>
-
-  <section id="projects">
-    <h2>Projects</h2>
-    <p>
-      This section will contain assignments and projects that I complete during
-      CS 125. Each project will demonstrate something new that I have learned
-      about computers, technology, or digital citizenship.
-    </p>
-  </section>
-
-  <section id="security">
-    <h2>Security</h2>
-    <p>
-      This section will cover cybersecurity, privacy, online safety, strong
-      passwords, and ways to protect personal and digital information.
-    </p>
-  </section>
-
-  <section id="ai">
-    <h2>Artificial Intelligence</h2>
-    <p>
-      This section will explore artificial intelligence, how AI is used in the
-      modern world, its advantages and limitations, and the importance of using
-      AI responsibly.
-    </p>
-  </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>
-      Professional contact information can be added to this section as the
-      portfolio develops.
-    </p>
-  </section>
-
-  <section>
-    <h2>Planned Website Pages</h2>
-    <p>Home • About Me • Education • Skills • Projects • Security • AI • Contact</p>
-  </section>
-
-  <section>
-    <h2>Site Map</h2>
-    <div class="sitemap">Home
-├── About Me
-├── Education
-├── Skills
-├── Projects
-├── Security
-├── AI
-└── Contact</div>
-  </section>
-</main>
-
-<footer>
-  <p>Sebastian Rodriguez • CS 125 Digital Citizen Portfolio</p>
-</footer>
-
-</body>
-</html>
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Digital Citizen AI Command Center</title><style>:root{--bg:#eef5ff;--fg:#102440;--card:#fff}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui}body.dark{--bg:#0b1930;--fg:#eff6ff;--card:#172a49}header{background:linear-gradient(120deg,#071c3e,#1865c2);color:white;padding:50px 6%}h1{font-size:clamp(2rem,5vw,3.6rem)}nav{background:#071c3e;position:sticky;top:0;z-index:2;display:flex;overflow:auto}nav a{padding:12px;color:white;white-space:nowrap;text-decoration:none}main{max-width:1100px;margin:auto;padding:15px}section{padding:30px 0;border-bottom:1px solid #8aa4c5;scroll-margin-top:55px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}.card{background:var(--card);padding:18px;border-radius:14px;border:1px solid #9db4d255}button{background:#1765d2;color:white;border:0;border-radius:8px;padding:10px;cursor:pointer;margin:4px}input,select{padding:10px;max-width:100%;border:1px solid #93abc6;border-radius:8px}.chat{height:220px;overflow:auto;background:var(--card);padding:14px;border-radius:12px}.msg{margin:8px;padding:8px;background:var(--bg);border-radius:8px}.mine{text-align:right}.result{padding:12px;background:var(--card);border-left:4px solid #1765d2;margin:12px 0}.bar{background:#d5e5fa;border-radius:8px;height:14px}.fill{background:#2677dc;height:100%;border-radius:8px}video{width:100%;max-width:650px;background:black}footer{background:#071c3e;color:white;text-align:center;padding:25px}</style><header id="home"><h1>🤖 Digital Citizen Command Center</h1><p>Assignment 9 • One integrated technology learning website with an interactive command agent, voice control, shopping, music, movies and educational tools.</p><button onclick="act('show assignments')">Explore assignments</button><button onclick="act('dark mode')">Dark mode</button></header><nav><a href="#home">Home</a><a href="#idea">Idea</a><a href="#assignments">Assignments</a><a href="#assistant">AI Agent</a><a href="#dashboard">Dashboard</a><a href="#shopping">Shopping</a><a href="#media">Media</a><a href="#security">Security</a><a href="#quiz">Quiz</a><a href="#contact">Contact</a></nav><main>
+<section id="idea"><h2>💡 My idea</h2><div class="grid"><div class="card"><h3>Problem</h3>Students have disconnected technology lessons and tools that can be difficult to navigate.</div><div class="card"><h3>Solution</h3>One learning website with an agent that operates its features from typed or spoken commands.</div><div class="card"><h3>Who benefits?</h3>Students, beginners, and anyone studying digital citizenship or technology.</div><div class="card"><h3>What is different?</h3>Instead of separate websites, lessons, media, shopping, and controls all work together in one interface.</div></div><p><b>Objectives:</b> Learn technology, stay safe online, and practice hands-free commands. <b>Future features:</b> secure server-based AI, live approved shopping APIs, saved learning progress, and multilingual voice control. <b>Impact:</b> easier, more accessible digital learning.</p></section>
+<section id="assignments"><h2>📚 All integrated assignments</h2><div class="grid"><div class="card"><h3>Assignment 2 — Digital Citizenship</h3>A digital citizen uses technology responsibly. Students should respect others, verify information, and protect privacy. A digital footprint is the record of online activity. Digital citizenship matters because online actions affect safety and reputation.</div><div class="card"><h3>Assignment 3 — Internet</h3>The internet connects computer networks. The web links documents and services. HTML structures pages, CSS styles them, and JavaScript makes them interactive. AI chatbots and digital people can make technology easier to use.</div><div class="card"><h3>Assignment 4 — Hardware</h3><b>CPU:</b> processes instructions. <b>RAM:</b> temporary active memory. <b>SSD:</b> saves files. <b>GPU:</b> graphics and parallel processing.</div><div class="card"><h3>Assignment 6 — Security & Ethics</h3>Strong unique passwords, MFA, phishing awareness, malware prevention, privacy settings, and ethical AI use protect people online.</div><div class="card"><h3>Assignment 7 — Input & Output</h3><b>Input:</b> ⌨️ keyboard, 🖱️ mouse, 📠 scanner, 🎤 microphone. <b>Output:</b> 🖥️ monitor, 🖨️ printer, 🔊 speakers, 📽️ projector.</div><div class="card"><h3>Chapter 7 — Digital Storage</h3>🖴 HDD: cheap bulk storage. 💾 SATA SSD: fast flash storage. ⚡ NVMe: very fast SSD. 🔌 USB and SD cards: portable. 📀 CD/DVD/Blu-ray: optical. ☁️ Cloud: remote storage and syncing. Protect data with encryption and 3-2-1 backups.</div></div></section>
+<section id="assistant"><h2>🎙️ Command Assistant</h2><p>This is a clearly labeled <b>rule-based AI-agent demonstration</b>, not a live language-model API. Commands trigger real functions.</p><p id="micstatus">Microphone off</p><button id="start">Start listening</button><button id="stop">Stop listening</button><label><input type="checkbox" id="speak"> Speak replies</label><p id="heard">Recognized command: none</p><div id="chat" class="chat" aria-live="polite"><div class="msg">Try: “show assignments”, “explain assignment 7”, “dark mode”, “change background to blue”, “play music”, “pause movie”, “find keyboard”, “add the second product to cart”, or “go home”.</div></div><input id="command" placeholder="Type your command" aria-label="Command"><button onclick="act(document.getElementById('command').value);document.getElementById('command').value=''">Send</button><p class="result">Agent workflow: recognize intent → choose function → execute → confirm outcome. Voice availability depends on browser permissions.</p></section>
+<section id="dashboard"><h2>📊 Storage data visualization and tools</h2><p>Illustrative transfer speeds, not product-specific benchmarks.</p><div id="bars"></div><div class="grid"><div class="card"><h3>Capacity calculator</h3><input id="gb" type="number" value="128" min="1" aria-label="Storage GB"><button onclick="calc()">Calculate</button><p id="capacity"></p><small>Estimates: 4 MB/photo, 5 MB/song, 1.5 GB/HD video hour, 10% reserved.</small></div><div class="card"><h3>Storage recommendation</h3><select id="use"><option>Gaming</option><option>Schoolwork</option><option>Photography</option><option>Business</option><option>Backups</option></select><button onclick="recommend()">Recommend</button><p id="rec"></p></div></div><div class="card"><h3>Storage comparison</h3><p>HDD: low cost, slower, shock-sensitive. SATA SSD: faster, affordable. NVMe SSD: fastest of these options, higher performance. USB and SD: portable but easy to lose. Optical discs: offline media but need a drive. Cloud: convenient syncing, dependent on connectivity and provider security.</p></div></section>
+<section id="shopping"><h2>🛒 Voice-controlled demo shopping</h2><p>Sample catalog only. Prices are fictional examples, not live listings. No payments or real purchases.</p><input id="search" placeholder="Search keyboard, mouse, SSD" aria-label="Product search"><button onclick="searchProducts(document.getElementById('search').value)">Search</button><div id="products" class="grid"></div><div class="card"><h3>Cart: <span id="count">0</span> items</h3><div id="cart"></div><p id="total"></p><button onclick="clearCart()">Clear cart</button><button onclick="document.getElementById('checkout').textContent='Demo checkout only: no real purchase or payment was made.'">Simulate checkout</button><p id="checkout"></p></div></section>
+<section id="media"><h2>🎵 Original music and 🎬 movie</h2><div class="grid"><div class="card"><h3>Original synthesized music</h3><select id="track"><option value="0">Blue Circuit</option><option value="1">Cloud Drift</option><option value="2">Pixel Pulse</option></select><button onclick="musicPlay()">Play / Pause</button><button onclick="musicStop()">Stop</button><label>Volume <input type="range" id="volume" value="25"></label><p id="progress">0:00 / 0:16</p><p>Music does not autoplay. These are original browser-generated tones.</p></div><div class="card"><h3>Big Buck Bunny — Blender Foundation</h3><video id="movie" controls playsinline preload="none"><source src="https://download.blender.org/peach/bigbuckbunny_movies/BigBuckBunny_320x180.mp4" type="video/mp4"></video><button onclick="moviePlay()">Play movie</button><button onclick="moviePause()">Pause movie</button><button onclick="movieStop()">Stop movie</button><button onclick="document.getElementById('movie').requestFullscreen?.()">Fullscreen</button><p>Openly licensed film; playback requires the external host to be available. <a href="https://peach.blender.org/" target="_blank" rel="noopener">Film and license information</a>.</p></div></div></section>
+<section id="security"><h2>🔐 Security & Privacy</h2><div class="grid"><div class="card"><h3>Passwords</h3>Use long, unique passwords and MFA. Never share or reuse passwords.</div><div class="card"><h3>Phishing</h3>Watch for urgent messages, suspicious links, and fake sign-in requests.</div><div class="card"><h3>Malware</h3>Viruses, ransomware, and spyware can damage devices or steal information. Update software and avoid unsafe downloads.</div><div class="card"><h3>Privacy and AI ethics</h3>Limit personal data sharing. Verify AI outputs for misinformation and bias; respect copyright and intellectual property.</div></div><div class="card"><h3>Local password strength demo</h3><p>Only type a made-up password. Input is processed locally, never sent or stored by this page.</p><input id="password" type="password" autocomplete="off" placeholder="Fake test password"><p id="strength">Strength: not tested</p></div></section>
+<section id="quiz"><h2>🧠 Learning quiz</h2><div id="quizbox" class="card"></div></section>
+<section id="contact"><h2>📄 Documentation</h2><p><b>Project:</b> Digital Citizen Command Center. A single HTML/CSS/JavaScript application combining earlier coursework and interactive features.</p><p><b>Agent implementation:</b> local rule-based intent detection calls navigation, theme, media, shopping, and educational functions. The chat confirms outcomes; unsupported commands show guidance.</p><p><b>Privacy:</b> No payments or real passwords are collected. Browser speech recognition may use a browser provider's processing service. Voice requires explicit permission and can be stopped.</p><p><b>Limitations:</b> No live AI backend, no real shopping API, and voice/media support varies by browser. Test playback and voice on your published website.</p></section></main><footer>Digital Citizen Command Center • Assignment 9</footer>
+<script>
+const $=id=>document.getElementById(id),products=[['Wireless Keyboard',29.99],['Ergonomic Keyboard',49.99],['Wireless Mouse',19.99],['1 TB SATA SSD',65],['1 TB NVMe SSD',85],['USB Flash Drive',15],['SD Memory Card',12],['Headphones',35]];let shown=products.slice(),cart=[];
+function jump(id){$(id).scrollIntoView({behavior:'smooth'})}function msg(s,me=false){const d=document.createElement('div');d.className='msg'+(me?' mine':'');d.textContent=s;$('chat').append(d);$('chat').scrollTop=$('chat').scrollHeight;if(!me&&$('speak').checked&&speechSynthesis){speechSynthesis.cancel();speechSynthesis.speak(new SpeechSynthesisUtterance(s))}}
+function renderProducts(){const box=$('products');box.replaceChildren();shown.forEach((p,i)=>{const d=document.createElement('div');d.className='card';const h=document.createElement('h3');h.textContent=(i+1)+'. '+p[0];const t=document.createElement('p');t.textContent='$'+p[1].toFixed(2)+' • Demo item';const b=document.createElement('button');b.textContent='Add to cart';b.onclick=()=>add(i);d.append(h,t,b);box.append(d)});if(!shown.length)box.textContent='No matching demo products.'}
+function searchProducts(q){shown=products.filter(p=>p[0].toLowerCase().includes(q.toLowerCase()));renderProducts();jump('shopping');return 'Showing '+shown.length+' demo products.'}
+function add(i){if(!shown[i])return 'No product at that position.';cart.push(shown[i]);renderCart();return shown[i][0]+' added to cart.'}
+function renderCart(){$('count').textContent=cart.length;$('cart').replaceChildren();cart.forEach((p,i)=>{const line=document.createElement('p');line.textContent=p[0]+' — $'+p[1].toFixed(2)+' ';const b=document.createElement('button');b.textContent='Remove';b.onclick=()=>{cart.splice(i,1);renderCart()};line.append(b);$('cart').append(line)});$('total').textContent='Demo total: $'+cart.reduce((s,p)=>s+p[1],0).toFixed(2)}function clearCart(){cart=[];renderCart();return 'Cart cleared.'}renderProducts();renderCart();
+function calc(){const n=Number($('gb').value);$('capacity').textContent=n>0&&n<=100000?'Approx. '+Math.floor(n*.9*250)+' photos OR '+Math.floor(n*.9*200)+' songs OR '+Math.floor(n*.9/1.5)+' hours of HD video.':'Enter a valid GB value.'}calc();
+function recommend(){const r={Gaming:'NVMe SSD for performance.',Schoolwork:'Cloud plus local backup.',Photography:'Fast SD card and external SSD.',Business:'Encrypted SSD and cloud backup.',Backups:'External HDD and off-site copy.'};$('rec').textContent=r[$('use').value]}recommend();
+[['HDD',150],['SATA SSD',500],['NVMe SSD',3500]].forEach(([name,n])=>{const p=document.createElement('p');p.textContent=name+' — '+n+' MB/s';const b=document.createElement('div');b.className='bar';const f=document.createElement('div');f.className='fill';f.style.width=n/3500*100+'%';b.append(f);$('bars').append(p,b)});
+let ctx,gain,osc,timer,step=0,playing=false;const notes=[[262,330,392,523,392,330,294,392],[220,262,330,262,196,247,294,247],[330,392,440,392,330,294,262,294]];
+function note(){if(osc){osc.stop();osc.disconnect()}osc=ctx.createOscillator();osc.frequency.value=notes[+$('track').value][step%8];osc.type='sine';osc.connect(gain);osc.start();step=(step+1)%32;$('progress').textContent='0:'+String(step/2).padStart(2,'0')+' / 0:16'}
+async function musicPlay(){if(playing){clearInterval(timer);osc?.stop();osc=null;playing=false;return 'Music paused.'}try{ctx=ctx||new(window.AudioContext||window.webkitAudioContext)();await ctx.resume();if(!gain){gain=ctx.createGain();gain.connect(ctx.destination)}gain.gain.value=+$('volume').value/500;playing=true;note();timer=setInterval(note,500);return 'Music playing.'}catch(e){return 'Audio unavailable. Try using the player after interacting with the page.'}}
+function musicStop(){if(playing){clearInterval(timer);osc?.stop();osc=null;playing=false}step=0;$('progress').textContent='0:00 / 0:16';return 'Music stopped.'}$('volume').oninput=()=>{if(gain)gain.gain.value=+$('volume').value/500};$('track').onchange=musicStop;
+async function moviePlay(){try{await $('movie').play();jump('media');return 'Movie playing.'}catch(e){jump('media');return 'Movie could not start; check the player or connection.'}}function moviePause(){$('movie').pause();return 'Movie paused.'}function movieStop(){$('movie').pause();$('movie').currentTime=0;return 'Movie stopped.'}
+$('password').oninput=e=>{const s=e.target.value;$('strength').textContent='Strength: '+(!s?'not tested':s.length<12?'weak':s.length<16?'moderate':'strong')+'. Use only fake test passwords.'};
+const qs=[['What uses spinning disks?',['HDD','NVMe','USB'],0],['Which is an input device?',['Monitor','Microphone','Printer'],1],['What improves account security?',['MFA','Password reuse','Sharing passwords'],0],['What is a digital footprint?',['Online activity record','Storage disk','Computer fan'],0]];let qi=0,score=0;function quiz(){const box=$('quizbox');box.replaceChildren();if(qi===qs.length){box.textContent='Final score: '+score+'/'+qs.length;const b=document.createElement('button');b.textContent='Restart';b.onclick=()=>{qi=score=0;quiz()};box.append(b);return}const [q,opts,ans]=qs[qi],h=document.createElement('h3');h.textContent='Question '+(qi+1)+': '+q;box.append(h);const fb=document.createElement('p');const next=document.createElement('button');next.textContent='Next';next.disabled=true;opts.forEach((o,i)=>{const b=document.createElement('button');b.textContent=o;b.onclick=()=>{score+=+(i===ans);fb.textContent=(i===ans?'Correct! ':'Not quite. ')+'Answer: '+opts[ans];box.querySelectorAll('button').forEach(x=>x.disabled=true);next.disabled=false};box.append(b)});next.onclick=()=>{qi++;quiz()};box.append(fb,next)}quiz();
+const explanation={'2':'Digital citizenship means respectful and safe online behavior and understanding your digital footprint.','3':'Internet and web design uses HTML, CSS, JavaScript, links and media.','4':'CPU, RAM, GPU and SSD serve different hardware functions.','6':'Passwords, phishing, malware, privacy and AI ethics are the key topics.','7':'Input devices send information to computers; output devices present information.','9':'This project integrates all lessons with a command agent.'};
+async function execute(q){const s=q.toLowerCase().trim();if(/dark mode/.test(s)){document.body.classList.add('dark');return 'Dark mode enabled.'}if(/light mode/.test(s)){document.body.classList.remove('dark');return 'Light mode enabled.'}const col=s.match(/background.*(blue|green|purple|white|navy|beach)/);if(col){const colors={blue:'#d7eaff',green:'#dff8e6',purple:'#efe2ff',white:'#fff',navy:'#152b4d',beach:'#e5f7f5'};document.body.style.setProperty('--bg',colors[col[1]]);return 'Background changed to '+col[1]+'.'}if(/(home|homepage)/.test(s)){jump('home');return 'Returned home.'}if(/(show|open|list).*assignments/.test(s)){jump('assignments');return 'Assignments opened.'}const a=s.match(/assignment\s*(\d+)/);if(a)return explanation[a[1]]||'This assignment is not yet explained in the demo.';for(const id of ['dashboard','shopping','media','security','quiz','idea','assistant'])if(s.includes(id)){jump(id);return 'Opened '+id+'.'}if(/(pause|stop).*music/.test(s))return musicStop();if(/(play|resume).*music/.test(s))return await musicPlay();if(/(pause|stop).*(movie|video)/.test(s))return /stop/.test(s)?movieStop():moviePause();if(/(play|resume).*(movie|video)/.test(s))return await moviePlay();if(/clear.*cart/.test(s))return clearCart();if(/add.*cart/.test(s)){const m=s.match(/(first|second|third|\d+)/);return m?add(({first:1,second:2,third:3}[m[1]]||Number(m[1]))-1):'Say add the second product to cart.'}if(/(find|search)/.test(s)){const term=s.replace(/^.*?(find|search)( for)?\s*/,'').replace(/^(a|an)\s+/,'').replace(/products?/g,'').trim();return searchProducts(term)}if(/(what|explain|compare|how)/.test(s))return 'HDD is affordable bulk storage, SSD is faster, and cloud storage syncs remotely. For security use MFA, backups and unique passwords. Try asking about a numbered assignment.';return 'Unknown command. Try show assignments, dark mode, blue background, play music, play movie, find keyboard, or add second product to cart.'}
+async function act(q){if(!q.trim())return;msg(q,true);$('heard').textContent='Recognized/typed command: '+q;try{msg(await execute(q))}catch(e){msg('Action unavailable; try the on-screen controls.')}}$('command').onkeydown=e=>{if(e.key==='Enter'){act(e.target.value);e.target.value=''}};
+const SR=window.SpeechRecognition||window.webkitSpeechRecognition;let rec,listen=false;if(SR){rec=new SR();rec.continuous=true;rec.onresult=e=>{for(let i=e.resultIndex;i<e.results.length;i++)if(e.results[i].isFinal)act(e.results[i][0].transcript)};rec.onend=()=>{if(listen)try{rec.start()}catch(e){} };rec.onerror=e=>$('micstatus').textContent='Microphone error: '+e.error;$('start').onclick=()=>{listen=true;$('micstatus').textContent='🎙️ Listening';try{rec.start()}catch(e){$('micstatus').textContent='Microphone unavailable'}};$('stop').onclick=()=>{listen=false;rec.stop();$('micstatus').textContent='Microphone off'}}else{$('start').disabled=true;$('stop').disabled=true;$('micstatus').textContent='Speech recognition unavailable in this browser. Type commands instead.'}
+</script></html>
